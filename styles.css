@@ -40,6 +40,19 @@ header {
   font-weight: 600;
   gap: 2rem;
 }
+
+.mobile_menu_icon {
+  display: none; /* Hide the icon by default */
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 1.5rem;
+  height: 0.25rem;
+  margin: 0.3rem auto;
+  background-color: var(--text-dark);
+}
 a {
   text-decoration: none;
 }
@@ -283,7 +296,6 @@ a {
   gap: 1.25rem; /* Add some spacing between cards */
   background-color: var(--second-bg);
   padding: 1rem 1rem;
-  height: 100vh;
 }
 
 .card {
@@ -421,15 +433,6 @@ a {
   flex: 1;
 }
 
-.testimonial_details .about_heading {
-  margin: 2rem 0;
-}
-
-.testimonial_details .about_skills {
-  font-size: 2rem;
-  font-weight: 800;
-}
-
 .testimonial_card img {
   width: 100px;
   height: 100px;
@@ -465,11 +468,11 @@ a {
 }
 
 .media {
-  flex: 1; /* Distribute available space equally among the cards */
+  /* flex: 1;  */
   max-width: 100%;
   background-color: var(--second-bg);
   padding: 1.25rem;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -483,9 +486,11 @@ a {
   font-size: 2rem;
   font-weight: 800;
 }
-/* .media_img {
-  
-} */
+.media img {
+  padding: 5rem;
+  height: 100%;
+  width: 100%;
+}
 
 .app {
   background-color: var(--second-bg);
@@ -493,7 +498,7 @@ a {
 }
 
 .app_link {
-  flex: 1; /* Distribute available space equally among the cards */
+  flex: 1;
   max-width: 100%;
   background-color: var(--primary-color);
   padding: 1rem;
@@ -524,3 +529,355 @@ a {
 .hide {
   display: none;
 }
+
+.contact {
+  background-color: var(--second-bg);
+  padding-bottom: 3rem;
+}
+
+.contact_top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.contact_heading {
+  font-size: 1.25rem;
+  margin-top: 4rem;
+}
+
+.contact_subheading {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.contact_all {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact_details {
+  display: flex;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: #c1dde5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon i {
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: left;
+}
+
+.contact_info p {
+  color: gray;
+}
+
+.contact_info span {
+  font-weight: bolder;
+}
+
+footer {
+  margin: auto;
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: var(--primary-color);
+}
+
+.footer_heading {
+  color: var(--white);
+  font-size: 3rem;
+}
+
+.footer_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_icons ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer_icons li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--white);
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_icons i {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.terms {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  gap: 2rem;
+  color: var(--white);
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+  .header_links {
+    display: none; /* Hide the navigation links on mobile */
+  }
+
+  .mobile_menu_icon {
+    display: block; /* Show the icon on mobile */
+  }
+
+  .header_links.active {
+    display: block; /* Show the navigation links when the menu is active */
+  }
+  .hero_container {
+    flex-direction: column; /* Stack content vertically on mobile */
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .hero_details {
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .hero_img {
+    width: 100%; /* Make sure the image doesn't exceed container width */
+    margin-right: 0; /* Remove margin for smaller screens */
+    margin-top: 1rem;
+  }
+
+  .hero_btn {
+    padding: 0.8rem 3rem; /* Adjust padding for smaller screens */
+    border-radius: 2rem; /* Adjust border radius for smaller screens */
+    margin-top: 1.5rem; /* Add margin between image and button */
+  }
+  .featured {
+    text-align: center;
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .featured_heading {
+    margin: 1rem 0; /* Adjust margin for smaller screens */
+  }
+
+  .img_container {
+    margin-top: 1rem; /* Add margin between heading and image */
+  }
+
+  .img_container img {
+    width: 100%; /* Make sure the image doesn't exceed container width */
+  }
+  /* Styles for screens with width up to 768px (adjust as needed) */
+  .about {
+    text-align: center;
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .about_heading {
+    margin-top: 2rem; /* Adjust margin for smaller screens */
+  }
+
+  .about_skills {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-weight: 600; /* Adjust font weight for smaller screens */
+  }
+
+  .about_img_container img {
+    width: 100%; /* Make sure the image doesn't exceed container width */
+    max-width: 100%; /* Adjust max-width for smaller screens */
+    height: auto;
+    margin-top: 1rem; /* Add margin between skills and image */
+  }
+
+  .about_description {
+    padding: 1rem 1rem; /* Adjust padding for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .social_icons {
+    margin-top: 1rem; /* Add margin between description and social icons */
+  }
+  /* Styles for screens with width up to 768px (adjust as needed) */
+  .services {
+    text-align: center;
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .about_heading {
+    margin-top: 2rem; /* Adjust margin for smaller screens */
+  }
+
+  .about_skills {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-weight: 600; /* Adjust font weight for smaller screens */
+  }
+
+  .btn_tab {
+    padding: 0.75rem 4rem; /* Adjust button padding for smaller screens */
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    margin-top: 1.5rem; /* Adjust margin for smaller screens */
+  }
+  /* Styles for screens with width up to 768px (adjust as needed) */
+  .community {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .community_details {
+    padding: 2rem;
+  }
+
+  .community_btn {
+    display: none; /* Hide the button on mobile screens */
+  }
+
+  .community_img {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+  .courses {
+    display: block; /* Change to block layout for single column */
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    max-width: 100%; /* Take up full width of the container */
+    margin-bottom: 1.25rem; /* Add spacing between cards */
+  }
+  .consultation {
+    display: block; /* Change to block layout for single column */
+    padding: 1rem 1rem;
+  }
+
+  .consultation_card {
+    max-width: 100%; /* Take up full width of the container */
+    margin-bottom: 1.25rem; /* Add spacing between cards */
+  }
+  .testimonial {
+    flex-wrap: nowrap; /* Prevent wrapping on smaller screens */
+    gap: 0; /* Remove gap between cards */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap to each card */
+  }
+
+  .testimonial_card {
+    min-width: 100%; /* Ensure each card takes full width */
+    margin-right: 1.5rem; /* Add spacing between cards */
+    scroll-snap-align: start; /* Align to the start of each card */
+  }
+
+  .app_link {
+    padding: 2rem 1rem;
+  }
+
+  .app_link h1 {
+    font-size: 1.5rem; /* Adjust font size for subheading */
+    margin-top: 0.5rem; /* Adjust margin */
+  }
+
+  .app_link img {
+    max-height: 40vh;
+  }
+
+  .contact_top {
+    padding-bottom: 2rem;
+  }
+
+  .contact_heading {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .contact_subheading {
+    font-size: 1.75rem;
+  }
+
+  .contact_all {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .contact_details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon {
+    margin-bottom: 1rem;
+  }
+
+  .icon i {
+    font-size: 1.5rem;
+  }
+
+  .contact_info {
+    text-align: center;
+  }
+  footer {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .footer_heading {
+    font-size: 2rem;
+  }
+
+  .footer_icons {
+    margin-top: 1rem;
+  }
+
+  .footer_icons ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .footer_icons li {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .terms {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+/* Styles for screens with width up to 768px (adjust as needed) */

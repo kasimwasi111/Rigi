@@ -14,12 +14,17 @@
   <body>
     <header>
       <div class="header_logo">Logo</div>
+      <div class="mobile_menu_icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       <ul class="header_links">
         <li class="link"><a href="#">Join Community</a></li>
         <li class="link"><a href="#">Contact us</a></li>
       </ul>
     </header>
-    <section class="hero_container">
+    <div class="hero_container">
       <div class="hero_details">
         <h1 class="hero_header">Hack your wealth journey inside the 1% club</h1>
         <p class="hero_description">
@@ -29,14 +34,14 @@
         <button class="hero_btn">Join the community</button>
       </div>
       <img class="hero_img" src="assets/front.png" alt="front" />
-    </section>
-    <section class="featured">
+    </div>
+    <div class="featured">
       <h1 class="featured_heading">Featured in</h1>
       <div class="img_container">
         <img src="assets/featured.png" alt="featured" />
       </div>
-    </section>
-    <section class="about">
+    </div>
+    <div class="about">
       <h1 class="about_heading">About me</h1>
       <p class="about_skills">
         Entepreneur, content creator, Finance Influencer
@@ -69,117 +74,123 @@
           <li><i class="fa-brands fa-youtube"></i></li>
         </ul>
       </div>
-    </section>
-    <section class="services">
+    </div>
+    <div class="services">
       <h1 class="about_heading">Services</h1>
       <p class="about_skills">Start your journey towards financial freedom</p>
       <div class="tabs">
-        <button class="btn_tab active" data-tab="community">Community</button>
-        <button class="btn_tab" data-tab="courses">Courses</button>
-        <button class="btn_tab" data-tab="consultation">Consultation</button>
+        <button class="btn_tab active" onclick="displayTab(1)">
+          Community
+        </button>
+        <button class="btn_tab" onclick="displayTab(2)">Courses</button>
+        <button class="btn_tab" onclick="displayTab(3)">Consultation</button>
       </div>
-    </section>
-    <section class="community">
-      <div class="community_details">
-        <h1 class="community_header">The 1% Club</h1>
-        <p class="community_description">
-          Now, I'm on a mission to help you get to the RICHEST 1% - one
-          educational finance content at a time.
-        </p>
-        <div class="features">
-          <i class="fa fa-check-circle">
-            <span>Exclusive 1 on 1 interaction with the creator</span> </i
-          ><br /><br />
-          <i class="fa fa-check-circle">
-            <p>
-              Connect with like minded folks, from diverse backgrounds & cities
-            </p></i
-          ><br /><br />
-          <i class="fa fa-check-circle">
-            <span>32+ Hours of Investing Tutorials, Tools & Community</span></i
-          >
-        </div>
 
-        <button class="community_btn">Join the community</button>
-      </div>
-      <img class="community_img" src="assets/hero.png" alt="front" />
-    </section>
-    <section class="courses">
-      <div class="card">
-        <img class="card_img" src="assets/cardimg.png" alt="cardimg" />
-        <h1 class="card_heading">The 1% course</h1>
-        <p class="card_details">
-          Now, I'm on a mission to help you get to the RICHEST 1% - one
-          educational finance content at a time.
-        </p>
-        <button class="card_btn">Buy the course @ &#8377;3,999</button>
-      </div>
-      <div class="card">
-        <img class="card_img" src="assets/cardimg.png" alt="cardimg" />
-        <h1 class="card_heading">The 1% course</h1>
-        <p class="card_details">
-          Now, I'm on a mission to help you get to the RICHEST 1% - one
-          educational finance content at a time.
-        </p>
-        <button class="card_btn">Buy the course @ &#8377;3,999</button>
-      </div>
-      <div class="card">
-        <img class="card_img" src="assets/cardimg.png" alt="cardimg" />
-        <h1 class="card_heading">The 1% course</h1>
-        <p class="card_details">
-          Now, I'm on a mission to help you get to the RICHEST 1% - one
-          educational finance content at a time.
-        </p>
-        <button class="card_btn">Buy the course @ &#8377;3,999</button>
-      </div>
-    </section>
-    <section class="consultation">
-      <div class="consultation_card">
-        <img src="assets/phone.png" alt="" />
-        <h1 class="card_heading">
-          SCO vs HEA Dream11 Team Prediction | Dream11
-        </h1>
-        <div class="meet_details">
-          <i class="fa fa-calendar-o">&nbsp; 12 Slots left</i>
-          <i class="fa fa-clock-o" aria-hidden="true">&nbsp;15 min</i>
-          <p class="price">&#8377;99/slot</p>
+      <div class="community active" id="tab1">
+        <div class="community_details">
+          <h1 class="community_header">The 1% Club</h1>
+          <p class="community_description">
+            Now, I'm on a mission to help you get to the RICHEST 1% - one
+            educational finance content at a time.
+          </p>
+          <div class="features">
+            <i class="fa fa-check-circle">
+              <span>Exclusive 1 on 1 interaction with the creator</span> </i
+            ><br /><br />
+            <i class="fa fa-check-circle">
+              <p>
+                Connect with like minded folks, from diverse backgrounds &
+                cities
+              </p></i
+            ><br /><br />
+            <i class="fa fa-check-circle">
+              <span
+                >32+ Hours of Investing Tutorials, Tools & Community</span
+              ></i
+            >
+          </div>
+
+          <button class="community_btn">Join the community</button>
         </div>
-        <button class="card_btn">View Details</button>
+        <img class="community_img" src="assets/hero.png" alt="front" />
       </div>
-      <div class="consultation_card">
-        <img src="assets/meet.png" alt="meet" />
-        <h1 class="card_heading">
-          SCO vs HEA Dream11 Team Prediction | Dream11
-        </h1>
-        <div class="meet_details">
-          <i class="fa fa-calendar-o">&nbsp; 12 Slots left</i>
-          <i class="fa fa-clock-o" aria-hidden="true">&nbsp;15 min</i>
-          <p class="price">&#8377;99/slot</p>
+      <div class="courses" id="tab2">
+        <div class="card">
+          <img class="card_img" src="assets/cardimg.png" alt="cardimg" />
+          <h1 class="card_heading">The 1% course</h1>
+          <p class="card_details">
+            Now, I'm on a mission to help you get to the RICHEST 1% - one
+            educational finance content at a time.
+          </p>
+          <button class="card_btn">Buy the course @ &#8377;3,999</button>
         </div>
-        <button class="card_btn">View Details</button>
+        <div class="card">
+          <img class="card_img" src="assets/cardimg.png" alt="cardimg" />
+          <h1 class="card_heading">The 1% course</h1>
+          <p class="card_details">
+            Now, I'm on a mission to help you get to the RICHEST 1% - one
+            educational finance content at a time.
+          </p>
+          <button class="card_btn">Buy the course @ &#8377;3,999</button>
+        </div>
+        <div class="card">
+          <img class="card_img" src="assets/cardimg.png" alt="cardimg" />
+          <h1 class="card_heading">The 1% course</h1>
+          <p class="card_details">
+            Now, I'm on a mission to help you get to the RICHEST 1% - one
+            educational finance content at a time.
+          </p>
+          <button class="card_btn">Buy the course @ &#8377;3,999</button>
+        </div>
       </div>
-      <div class="consultation_card">
-        <div class="img_phone">
+      <div class="consultation" id="tab3">
+        <div class="consultation_card">
           <img src="assets/phone.png" alt="" />
+          <h1 class="card_heading">
+            SCO vs HEA Dream11 Team Prediction | Dream11
+          </h1>
+          <div class="meet_details">
+            <i class="fa fa-calendar-o">&nbsp; 12 Slots left</i>
+            <i class="fa fa-clock-o" aria-hidden="true">&nbsp;15 min</i>
+            <p class="price">&#8377;99/slot</p>
+          </div>
+          <button class="card_btn">View Details</button>
         </div>
-        <h1 class="card_heading">
-          SCO vs HEA Dream11 Team Prediction | Dream11
-        </h1>
-        <div class="meet_details">
-          <i class="fa fa-calendar-o">&nbsp; 12 Slots left</i>
-          <i class="fa fa-clock-o" aria-hidden="true">&nbsp;15 min</i>
-          <p class="price">&#8377;99/slot</p>
+        <div class="consultation_card">
+          <img src="assets/meet.png" alt="meet" />
+          <h1 class="card_heading">
+            SCO vs HEA Dream11 Team Prediction | Dream11
+          </h1>
+          <div class="meet_details">
+            <i class="fa fa-calendar-o">&nbsp; 12 Slots left</i>
+            <i class="fa fa-clock-o" aria-hidden="true">&nbsp;15 min</i>
+            <p class="price">&#8377;99/slot</p>
+          </div>
+          <button class="card_btn">View Details</button>
         </div>
-        <button class="card_btn">View Details</button>
+        <div class="consultation_card">
+          <div class="img_phone">
+            <img src="assets/phone.png" alt="" />
+          </div>
+          <h1 class="card_heading">
+            SCO vs HEA Dream11 Team Prediction | Dream11
+          </h1>
+          <div class="meet_details">
+            <i class="fa fa-calendar-o">&nbsp; 12 Slots left</i>
+            <i class="fa fa-clock-o" aria-hidden="true">&nbsp;15 min</i>
+            <p class="price">&#8377;99/slot</p>
+          </div>
+          <button class="card_btn">View Details</button>
+        </div>
       </div>
-    </section>
+    </div>
     <div class="testimonial_details">
       <h1 class="testimonial_heading">Testimonials</h1>
       <p class="testimonial_subheading">
         What community members are saying about us?
       </p>
     </div>
-    <section class="testimonial">
+    <div class="testimonial">
       <div class="testimonial_card">
         <p>
           Now, I'm on a mission to help you get to the RICHEST 1% - one
@@ -210,15 +221,12 @@
         <h1 class="test_heading">Rustam Paji</h1>
         <p>Hotel Owner</p>
       </div>
-    </section>
-    <section class="media">
+    </div>
+    <div class="media">
       <h1 class="media_heading">Media section</h1>
       <p class="about_skills">Check out the intro video of the community</p>
-      <div class="media_img">
-        <img src="assets/video.png" alt="about" />
-      </div>
-    </section>
-
+      <img src="assets/video.png" alt="about" />
+    </div>
     <div class="app">
       <div class="app_link">
         <p>Get the app in one click</p>
@@ -227,5 +235,66 @@
         <img src="assets/app.png" alt="app" />
       </div>
     </div>
+
+    <div class="contact">
+      <div class="contact_top">
+        <h1 class="contact_heading">Contact us</h1>
+        <p class="contact_subheading">
+          Do you have any queries, feel free to reach out to us
+        </p>
+      </div>
+      <div class="contact_all">
+        <div class="contact_details">
+          <div class="icon">
+            <i class="fa fa-envelope-o"></i>
+          </div>
+
+          <div class="contact_info">
+            <p>&nbsp;&nbsp;Email us</p>
+            <span>&nbsp;&nbsp;Support@gmail.com</span>
+          </div>
+        </div>
+        <div class="contact_details">
+          <div class="icon">
+            <i class="fa fa-whatsapp"></i>
+          </div>
+
+          <div class="contact_info">
+            <p>&nbsp;&nbsp;We are available on Whatsapp</p>
+            <span>&nbsp;&nbsp;Click to Whatsapp</span>
+          </div>
+        </div>
+        <div class="contact_details">
+          <div class="icon">
+            <i class="fa fa-phone"></i>
+          </div>
+
+          <div class="contact_info">
+            <p>&nbsp;&nbsp;Call for sales & Support</p>
+            <span>&nbsp;&nbsp;+91-8460068722</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h1 class="footer_heading">Logo</h1>
+      <div class="footer_icons">
+        <ul>
+          <li><i class="fa brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+      </div>
+      <div class="store_image">
+        <img src="assets/store.png" alt="store" />
+      </div>
+      <div class="terms">
+        <p>&copy; 2023 companyname. inc.</p>
+        <p>Privacy Policy</p>
+        <p>Terms of services</p>
+      </div>
+    </footer>
   </body>
 </html>
