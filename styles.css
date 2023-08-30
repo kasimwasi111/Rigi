@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+:root {
+  --primary-color: #3565f2;
+  --white: #fff;
+  --text-dark: #000;
+  --second-bg: #ebeffd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  margin: auto;
+  padding: 1rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--second-bg);
+}
+
+.header_logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.header_links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color: var(--text-dark);
+  font-weight: 600;
+  gap: 2rem;
+}
+a {
+  text-decoration: none;
+}
+
+.link a {
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.link a:hover {
+  color: var(--text-dark);
+}
+
+.hero_container {
+  max-width: 100%;
+  height: calc(100vh - 4rem);
+  margin: auto;
+  padding: 5rem 1rem;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero_description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-top: 1rem;
+}
+.hero_details {
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 10rem;
+}
+.hero_header {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: var(--white);
+}
+
+.hero_btn {
+  padding: 1rem 6rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  background-color: var(--white);
+  border-radius: 3rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.hero_img {
+  width: 60rem;
+  margin-right: 5rem;
+  margin-top: 1rem;
+}
+
+.featured {
+  background-color: var(--second-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.featured_heading {
+  margin: 2rem;
+}
+
+.img_container img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  width: 40rem;
+}
+
+.about {
+  background-color: var(--second-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about_heading {
+  margin-top: 4rem;
+}
+
+.about_skills {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.about_img_container img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  width: 30rem;
+}
+
+.about_description {
+  margin-top: 1rem;
+  padding: 1rem 10rem;
+  font-size: 20px;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_icons ul {
+  list-style: none;
+  display: flex;
+}
+
+.social_icons li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_icons i {
+  color: white;
+  font-size: 20px;
+}
+
+.services {
+  background-color: var(--second-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn_tab {
+  padding: 1rem 6rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 3rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.community {
+  max-width: 100%;
+  margin: auto;
+  padding: 1rem 1rem;
+  background-color: var(--second-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.community_details {
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 10rem;
+}
+
+.community_header {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: var(--text-dark);
+}
+.community_description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-top: 1rem;
+}
+
+.features {
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.features i {
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+}
+
+.features i:before {
+  margin-right: 0.65rem;
+}
+
+.features span {
+  display: inline-block;
+  text-transform: lowercase;
+}
+
+.features br {
+  margin-bottom: 1.25rem;
+}
+
+.community_btn {
+  padding: 1rem 6rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 3rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.community_img {
+  width: 60rem;
+  margin-right: 5rem;
+  margin-top: 1rem;
+}
