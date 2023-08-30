@@ -274,3 +274,74 @@ a {
   margin-right: 5rem;
   margin-top: 1rem;
 }
+/* 
+.courses {
+  max-width: 100%;
+  margin: auto;
+  padding: 1rem 1rem;
+  background-color: var(--second-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 2rem;
+}
+.card_img {
+  padding: 1rem;
+  object-fit: cover;
+} */
+
+.courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow flex items to wrap to next line */
+  gap: 1.25rem; /* Add some spacing between cards */
+  background-color: var(--second-bg);
+  padding: 1rem 1rem;
+}
+
+.card {
+  flex: 1; /* Distribute available space equally among the cards */
+  max-width: calc(33.33% - 5rem);
+  background-color: var(--white);
+  border-radius: 0.65rem;
+  box-shadow: 0 0 0.65rem rgba(0, 0, 0, 0.2);
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.card_img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.card_heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.card_details {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.card_btn {
+  padding: 1rem 1rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 3rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  cursor: pointer;
+}
