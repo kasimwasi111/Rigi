@@ -151,7 +151,7 @@ a {
 .about_description {
   margin-top: 1rem;
   padding: 1rem 10rem;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .social_icons {
@@ -274,25 +274,6 @@ a {
   margin-right: 5rem;
   margin-top: 1rem;
 }
-/* 
-.courses {
-  max-width: 100%;
-  margin: auto;
-  padding: 1rem 1rem;
-  background-color: var(--second-bg);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.card {
-  background-color: var(--white);
-  border-radius: 2rem;
-}
-.card_img {
-  padding: 1rem;
-  object-fit: cover;
-} */
 
 .courses {
   display: flex;
@@ -302,6 +283,7 @@ a {
   gap: 1.25rem; /* Add some spacing between cards */
   background-color: var(--second-bg);
   padding: 1rem 1rem;
+  height: 100vh;
 }
 
 .card {
@@ -311,7 +293,6 @@ a {
   border-radius: 0.65rem;
   box-shadow: 0 0 0.65rem rgba(0, 0, 0, 0.2);
   padding: 1.25rem;
-  text-align: center;
 }
 
 .card_img {
@@ -324,6 +305,7 @@ a {
 .card_heading {
   font-size: 1.5rem;
   margin-bottom: 0.65rem;
+  text-align: left;
 }
 
 .card_details {
@@ -344,4 +326,201 @@ a {
   cursor: pointer;
   margin-top: 2rem;
   cursor: pointer;
+  text-align: center;
+}
+
+.consultation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-bg);
+  padding: 1rem 1rem;
+  gap: 1.25rem;
+}
+
+.consultation_card {
+  flex: 1; /* Distribute available space equally among the cards */
+  max-width: calc(33.33% - 5rem);
+  background-color: var(--white);
+  border-radius: 0.65rem;
+  box-shadow: 0 0 0.65rem rgba(0, 0, 0, 0.2);
+  padding: 1.25rem;
+}
+
+.consultation_card img {
+  border-radius: 50%;
+  background-color: var(--second-bg);
+  width: 3rem;
+}
+
+.card_heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.65rem;
+  text-align: left;
+}
+
+.meet_details {
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.meet_details i,
+.meet_details p {
+  margin: 1rem; /* Add some spacing between elements */
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.testimonial_details {
+  background-color: var(--second-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.testimonial_heading {
+  font-size: 1.25rem;
+  margin-top: 4rem;
+}
+
+.testimonial_subheading {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  background-color: var(--second-bg);
+  padding: 1rem 1rem;
+  gap: 1.5rem; /* Add some spacing between cards */
+  padding-top: 3rem;
+}
+
+.testimonial_card {
+  flex: 1; /* Distribute available space equally among the cards */
+  max-width: calc(33.33% - 5rem);
+  background-color: var(--white);
+  border-radius: 1.25rem;
+  box-shadow: 0 0 0.65rem rgba(0, 0, 0, 0.2);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial_details {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+}
+
+.testimonial_details .about_heading {
+  margin: 2rem 0;
+}
+
+.testimonial_details .about_skills {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.testimonial_card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--second-bg);
+  margin: 1rem auto;
+}
+
+.card_heading {
+  font-size: 1.5rem;
+  margin: 0.65rem 0;
+  text-align: left;
+}
+
+.testimonial_card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.card_btn {
+  padding: 1rem 1rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 3rem;
+  cursor: pointer;
+  margin-top: auto; /* Push the button to the bottom */
+  width: 100%; /* Make the button full width */
+}
+
+.media {
+  flex: 1; /* Distribute available space equally among the cards */
+  max-width: 100%;
+  background-color: var(--second-bg);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.media_heading {
+  margin-top: 4rem;
+}
+
+.about_skills {
+  font-size: 2rem;
+  font-weight: 800;
+}
+/* .media_img {
+  
+} */
+
+.app {
+  background-color: var(--second-bg);
+  padding-top: 3rem;
+}
+
+.app_link {
+  flex: 1; /* Distribute available space equally among the cards */
+  max-width: 100%;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 50% 50% 0 0;
+}
+
+.app_link p {
+  margin-top: 3rem;
+  color: var(--white);
+}
+
+.app_link h1 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: var(--white);
+}
+
+.app_link img {
+  margin: 6rem;
+  height: 70%;
+  width: 65%;
+}
+
+.hide {
+  display: none;
 }
