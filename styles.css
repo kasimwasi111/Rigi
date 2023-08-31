@@ -840,7 +840,7 @@ footer {
   }
 
   .testimonial_card {
-    min-width: 100%;
+    min-width: 90%;
     margin-right: 1.5rem;
     scroll-snap-align: start;
   }
