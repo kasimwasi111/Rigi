@@ -667,6 +667,11 @@ footer {
 /* Responsiveness */
 
 @media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
   .header_links {
     display: none;
   }
