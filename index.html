@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/8093241b59.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -20,8 +20,10 @@
         <span class="bar"></span>
       </div>
       <ul class="header_links">
-        <li class="link"><a href="#">Join Community</a></li>
-        <li class="link"><a href="#">Contact us</a></li>
+        <li class="link">
+          <a href="#" class="community_link">Join Community</a>
+        </li>
+        <li class="link"><a href="#" class="contact_link">Contact us</a></li>
       </ul>
     </header>
     <div class="hero_container">
@@ -79,45 +81,41 @@
       <h1 class="about_heading">Services</h1>
       <p class="about_skills">Start your journey towards financial freedom</p>
       <div class="tabs">
-        <button class="btn_tab active" onclick="displayTab(1)" data-tab="1">
-          Community
-        </button>
-        <button class="btn_tab" onclick="displayTab(2)" data-tab="2">
-          Courses
-        </button>
-        <button class="btn_tab" onclick="displayTab(3)" data-tab="3">
-          Consultation
-        </button>
+        <button class="btn_tab active">Community</button>
+        <button class="btn_tab">Courses</button>
+        <button class="btn_tab">Consultation</button>
       </div>
 
-      <div class="community active" id="tab1">
+      <div class="community active" id="community-section">
         <div class="community_details">
-          <h1 class="community_header">The 1% Club</h1>
-          <p class="community_description">
-            Now, I'm on a mission to help you get to the RICHEST 1% - one
-            educational finance content at a time.
-          </p>
-          <div class="features">
-            <i class="fa fa-check-circle">
-              <span>Exclusive 1 on 1 interaction with the creator</span> </i
-            ><br /><br />
-            <i class="fa fa-check-circle">
-              <p>
-                Connect with like minded folks, from diverse backgrounds &
-                cities
-              </p></i
-            ><br /><br />
-            <i class="fa fa-check-circle">
-              <span
-                >32+ Hours of Investing Tutorials, Tools & Community</span
-              ></i
-            >
+          <div class="community_content">
+            <h1 class="community_header">The 1% Club</h1>
+            <p class="community_description">
+              Now, I'm on a mission to help you get to the RICHEST 1% - one
+              educational finance content at a time.
+            </p>
+            <div class="features">
+              <i class="fa fa-check-circle">
+                <span>Exclusive 1 on 1 interaction with the creator</span> </i
+              ><br /><br />
+              <i class="fa fa-check-circle">
+                <p>
+                  Connect with like minded folks, from diverse backgrounds &
+                  cities
+                </p></i
+              ><br /><br />
+              <i class="fa fa-check-circle">
+                <span
+                  >32+ Hours of Investing Tutorials, Tools & Community</span
+                ></i
+              >
+            </div>
+            <button class="community_btn">Join the community</button>
           </div>
-
-          <button class="community_btn">Join the community</button>
+          <img class="community_img" src="assets/hero.png" alt="front" />
         </div>
-        <img class="community_img" src="assets/hero.png" alt="front" />
       </div>
+
       <div class="courses" id="tab2">
         <div class="card">
           <img class="card_img" src="assets/cardimg.png" alt="cardimg" />
@@ -240,7 +238,7 @@
       </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact-section">
       <div class="contact_top">
         <h1 class="contact_heading">Contact us</h1>
         <p class="contact_subheading">
@@ -300,36 +298,5 @@
         <p>Terms of services</p>
       </div>
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const tabButtons = document.querySelectorAll(".btn_tab");
-        const tabContents = document.querySelectorAll(
-          ".community, .courses, .consultation"
-        );
-
-        // Display default tab
-        tabContents[0].style.display = "block";
-        tabButtons[0].classList.add("active");
-
-        // Add click event listeners to tab buttons
-        tabButtons.forEach((button, index) => {
-          button.addEventListener("click", () => {
-            // Hide all tab contents
-            tabContents.forEach((content) => {
-              content.style.display = "none";
-            });
-
-            // Display the selected tab content
-            tabContents[index].style.display = "block";
-
-            // Activate the clicked tab button and deactivate others
-            tabButtons.forEach((btn) => {
-              btn.classList.remove("active");
-            });
-            button.classList.add("active");
-          });
-        });
-      });
-    </script>
   </body>
 </html>

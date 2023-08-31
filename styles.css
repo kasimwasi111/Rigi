@@ -234,13 +234,18 @@ a {
   background-color: var(--second-bg);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .community_details {
+  max-width: 100%;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 5rem 10rem;
+}
+
+.community_content {
+  flex: 1;
+  padding: 5rem 2rem;
 }
 
 .community_header {
@@ -249,6 +254,7 @@ a {
   line-height: 3rem;
   color: var(--text-dark);
 }
+
 .community_description {
   font-size: 1rem;
   font-weight: 500;
@@ -275,6 +281,7 @@ a {
 .features span {
   display: inline-block;
   text-transform: lowercase;
+  text-align: left;
 }
 
 .features br {
@@ -282,7 +289,7 @@ a {
 }
 
 .community_btn {
-  padding: 1rem 6rem;
+  padding: 1rem 3rem;
   outline: none;
   border: none;
   font-size: 1rem;
@@ -292,11 +299,12 @@ a {
   border-radius: 3rem;
   cursor: pointer;
   margin-top: 2rem;
+  align-self: flex-start;
 }
+
 .community_img {
-  width: 60rem;
-  margin-right: 5rem;
-  margin-top: 1rem;
+  width: 20rem;
+  margin: 1rem;
 }
 
 .courses {
@@ -668,10 +676,34 @@ footer {
   .mobile_menu_icon {
     display: block; /* Show the icon on mobile */
   }
-
   .header_links.active {
-    display: block; /* Show the navigation links when the menu is active */
+    display: flex;
+    flex-direction: column; /* Display links in a column layout */
+    position: absolute;
+    top: 100%; /* Position links below the header */
+    left: 0;
+    width: 100%;
+    background-color: var(--second-bg);
+    padding: 1rem 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
+
+  .header_links.active li {
+    padding: 0.5rem 2rem; /* Add padding to each link for spacing */
+    text-align: center;
+  }
+  .mobile_menu_icon.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(0.3rem, 0.5rem);
+  }
+
+  .mobile_menu_icon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile_menu_icon.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(0.3rem, -0.5rem);
+  }
+
   .hero_container {
     flex-direction: column; /* Stack content vertically on mobile */
     align-items: center;
@@ -761,24 +793,24 @@ footer {
     margin-top: 1.5rem; /* Adjust margin for smaller screens */
   }
   /* Styles for screens with width up to 768px (adjust as needed) */
-  .community {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-
   .community_details {
-    padding: 2rem;
-  }
-
-  .community_btn {
-    display: none; /* Hide the button on mobile screens */
+    flex-direction: column; /* Stack content vertically on mobile */
+    text-align: center; /* Center align content on mobile */
   }
 
   .community_img {
-    width: 100%;
-    margin-right: 0;
-    margin-top: 2rem;
+    width: 100%; /* Make the image full width on mobile */
+    margin: 0; /* Remove margin to fit the image properly */
   }
+
+  .community_content {
+    padding: 2rem; /* Adjust padding for mobile spacing */
+  }
+
+  .community_btn {
+    display: none; /* Hide the "Join the community" button on mobile */
+  }
+
   .courses {
     display: block; /* Change to block layout for single column */
     padding: 2rem 1rem;
