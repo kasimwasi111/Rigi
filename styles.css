@@ -708,17 +708,17 @@ footer {
     flex-direction: column; /* Stack content vertically on mobile */
     align-items: center;
     justify-content: center;
-    padding: 3rem 1rem; /* Adjust padding for smaller screens */
+    /* Adjust padding for smaller screens */
+    padding-top: 6rem;
   }
 
   .hero_details {
-    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    padding: 2rem 3rem; /* Adjust padding for smaller screens */
   }
 
   .hero_img {
-    width: 100%; /* Make sure the image doesn't exceed container width */
+    width: 70%; /* Make sure the image doesn't exceed container width */
     margin-right: 0; /* Remove margin for smaller screens */
-    margin-top: 1rem;
   }
 
   .hero_btn {
