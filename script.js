@@ -41,13 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Add smooth scrolling to the contact section when "Contact us" is clicked
   contactLink.addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent default link behavior
+    event.preventDefault();
     const contactSection = document.getElementById("contact-section");
     contactSection.scrollIntoView({ behavior: "smooth" });
   });
 
   communityLink.addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent default link behavior
+    event.preventDefault();
     const contactSection = document.getElementById("community-section");
     contactSection.scrollIntoView({ behavior: "smooth" });
   });
