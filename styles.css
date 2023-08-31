@@ -397,14 +397,23 @@ a {
 
 .meet_details {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.meet_details i,
-.meet_details p {
-  margin: 1rem;
+.meet_icon {
   font-size: 1rem;
-  margin-top: 2rem;
+}
+
+.meet_desc {
+  font-size: 0.9rem; /* Adjust text size as needed */
+  color: var(--text-dark); /* Adjust text color as needed */
+}
+
+.price {
+  font-size: 0.9rem; /* Adjust text size as needed */
+  color: var(--text-dark); /* Adjust text color as needed */
+  margin: 1rem;
 }
 
 .testimonial_details {
