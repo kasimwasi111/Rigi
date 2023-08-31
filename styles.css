@@ -46,7 +46,7 @@ header {
 }
 
 .mobile_menu_icon {
-  display: none; /* Hide the icon by default */
+  display: none;
   cursor: pointer;
 }
 
@@ -207,7 +207,6 @@ a {
   text-align: center;
 }
 
-/* Keep the existing .btn_tab styles */
 .btn_tab {
   padding: 1rem 6rem;
   outline: none;
@@ -221,10 +220,9 @@ a {
   margin-top: 2rem;
 }
 
-/* Add styles for the active tab button */
 .btn_tab.active {
   background-color: var(--primary-color);
-  color: var(--white); /* Change to your desired active color */
+  color: var(--white);
 }
 
 .community {
@@ -311,14 +309,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Allow flex items to wrap to next line */
-  gap: 1.25rem; /* Add some spacing between cards */
+  flex-wrap: wrap;
+  gap: 1.25rem;
   background-color: var(--second-bg);
   padding: 1rem 1rem;
 }
 
 .card {
-  flex: 1; /* Distribute available space equally among the cards */
+  flex: 1;
   max-width: calc(33.33% - 5rem);
   background-color: var(--white);
   border-radius: 0.65rem;
@@ -370,7 +368,7 @@ a {
 }
 
 .consultation_card {
-  flex: 1; /* Distribute available space equally among the cards */
+  flex: 1;
   max-width: calc(33.33% - 5rem);
   background-color: var(--white);
   border-radius: 0.65rem;
@@ -392,12 +390,12 @@ a {
 
 .meet_details {
   display: flex;
-  align-items: center; /* Center vertically */
+  align-items: center;
 }
 
 .meet_details i,
 .meet_details p {
-  margin: 1rem; /* Add some spacing between elements */
+  margin: 1rem;
   font-size: 1rem;
   margin-top: 2rem;
 }
@@ -425,15 +423,15 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  flex-wrap: wrap;
   background-color: var(--second-bg);
   padding: 1rem 1rem;
-  gap: 1.5rem; /* Add some spacing between cards */
+  gap: 1.5rem;
   padding-top: 3rem;
 }
 
 .testimonial_card {
-  flex: 1; /* Distribute available space equally among the cards */
+  flex: 1;
   max-width: calc(33.33% - 5rem);
   background-color: var(--white);
   border-radius: 1.25rem;
@@ -482,16 +480,16 @@ a {
   background-color: var(--primary-color);
   border-radius: 3rem;
   cursor: pointer;
-  margin-top: auto; /* Push the button to the bottom */
-  width: 100%; /* Make the button full width */
+  margin-top: auto;
+  width: 100%;
 }
 
 .media {
-  /* flex: 1;  */
+  flex: 1;
   max-width: 100%;
   background-color: var(--second-bg);
   padding: 1.25rem;
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -670,17 +668,17 @@ footer {
 
 @media (max-width: 768px) {
   .header_links {
-    display: none; /* Hide the navigation links on mobile */
+    display: none;
   }
 
   .mobile_menu_icon {
-    display: block; /* Show the icon on mobile */
+    display: block;
   }
   .header_links.active {
     display: flex;
-    flex-direction: column; /* Display links in a column layout */
+    flex-direction: column;
     position: absolute;
-    top: 100%; /* Position links below the header */
+    top: 100%;
     left: 0;
     width: 100%;
     background-color: var(--second-bg);
@@ -689,7 +687,7 @@ footer {
   }
 
   .header_links.active li {
-    padding: 0.5rem 2rem; /* Add padding to each link for spacing */
+    padding: 0.5rem 2rem;
     text-align: center;
   }
   .mobile_menu_icon.active .bar:nth-child(1) {
@@ -705,141 +703,138 @@ footer {
   }
 
   .hero_container {
-    flex-direction: column; /* Stack content vertically on mobile */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* Adjust padding for smaller screens */
     padding-top: 6rem;
   }
 
   .hero_details {
-    padding: 2rem 3rem; /* Adjust padding for smaller screens */
+    padding: 2rem 3rem;
   }
 
   .hero_img {
-    width: 70%; /* Make sure the image doesn't exceed container width */
-    margin-right: 0; /* Remove margin for smaller screens */
+    width: 70%;
+    margin-right: 0;
   }
 
   .hero_btn {
-    padding: 0.8rem 3rem; /* Adjust padding for smaller screens */
-    border-radius: 2rem; /* Adjust border radius for smaller screens */
-    margin-top: 1.5rem; /* Add margin between image and button */
+    padding: 0.8rem 3rem;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
   }
   .featured {
     text-align: center;
-    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    padding: 2rem 1rem;
   }
 
   .featured_heading {
-    margin: 1rem 0; /* Adjust margin for smaller screens */
+    margin: 1rem 0;
   }
 
   .img_container {
-    margin-top: 1rem; /* Add margin between heading and image */
+    margin-top: 1rem;
   }
 
   .img_container img {
-    width: 100%; /* Make sure the image doesn't exceed container width */
+    width: 100%;
   }
-  /* Styles for screens with width up to 768px (adjust as needed) */
   .about {
     text-align: center;
-    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    padding: 2rem 1rem;
   }
 
   .about_heading {
-    margin-top: 2rem; /* Adjust margin for smaller screens */
+    margin-top: 2rem;
   }
 
   .about_skills {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
-    font-weight: 600; /* Adjust font weight for smaller screens */
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 
   .about_img_container img {
-    width: 100%; /* Make sure the image doesn't exceed container width */
-    max-width: 100%; /* Adjust max-width for smaller screens */
+    width: 100%;
+    max-width: 100%;
     height: auto;
-    margin-top: 1rem; /* Add margin between skills and image */
+    margin-top: 1rem;
   }
 
   .about_description {
-    padding: 1rem 1rem; /* Adjust padding for smaller screens */
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 1rem 1rem;
+    font-size: 1rem;
   }
 
   .social_icons {
-    margin-top: 1rem; /* Add margin between description and social icons */
+    margin-top: 1rem;
   }
-  /* Styles for screens with width up to 768px (adjust as needed) */
+
   .services {
     text-align: center;
-    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    padding: 2rem 1rem;
   }
 
   .about_heading {
-    margin-top: 2rem; /* Adjust margin for smaller screens */
+    margin-top: 2rem;
   }
 
   .about_skills {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
-    font-weight: 600; /* Adjust font weight for smaller screens */
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 
   .btn_tab {
-    padding: 0.75rem 4rem; /* Adjust button padding for smaller screens */
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
-    margin-top: 1.5rem; /* Adjust margin for smaller screens */
+    padding: 0.75rem 4rem;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
   }
-  /* Styles for screens with width up to 768px (adjust as needed) */
   .community_details {
-    flex-direction: column; /* Stack content vertically on mobile */
-    text-align: center; /* Center align content on mobile */
+    flex-direction: column;
+    text-align: center;
   }
 
   .community_img {
-    width: 100%; /* Make the image full width on mobile */
-    margin: 0; /* Remove margin to fit the image properly */
+    width: 100%;
+    margin: 0;
   }
 
   .community_content {
-    padding: 2rem; /* Adjust padding for mobile spacing */
+    padding: 2rem;
   }
 
   .community_btn {
-    display: none; /* Hide the "Join the community" button on mobile */
+    display: none;
   }
 
   .courses {
-    display: block; /* Change to block layout for single column */
+    display: block;
     padding: 2rem 1rem;
   }
 
   .card {
-    max-width: 100%; /* Take up full width of the container */
-    margin-bottom: 1.25rem; /* Add spacing between cards */
+    max-width: 100%;
+    margin-bottom: 1.25rem;
   }
   .consultation {
-    display: block; /* Change to block layout for single column */
+    display: block;
     padding: 1rem 1rem;
   }
 
   .consultation_card {
-    max-width: 100%; /* Take up full width of the container */
-    margin-bottom: 1.25rem; /* Add spacing between cards */
+    max-width: 100%;
+    margin-bottom: 1.25rem;
   }
   .testimonial {
-    flex-wrap: nowrap; /* Prevent wrapping on smaller screens */
-    gap: 0; /* Remove gap between cards */
-    overflow-x: scroll; /* Enable horizontal scrolling */
-    scroll-snap-type: x mandatory; /* Snap to each card */
+    flex-wrap: nowrap;
+    gap: 0;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
   }
 
   .testimonial_card {
-    min-width: 100%; /* Ensure each card takes full width */
-    margin-right: 1.5rem; /* Add spacing between cards */
-    scroll-snap-align: start; /* Align to the start of each card */
+    min-width: 100%;
+    margin-right: 1.5rem;
+    scroll-snap-align: start;
   }
 
   .app_link {
@@ -847,8 +842,8 @@ footer {
   }
 
   .app_link h1 {
-    font-size: 1rem; /* Adjust font size for subheading */
-    margin-top: 2rem; /* Adjust margin */
+    font-size: 1rem;
+    margin-top: 2rem;
   }
 
   .app_link img {
@@ -922,5 +917,3 @@ footer {
     gap: 1rem;
   }
 }
-
-/* Styles for screens with width up to 768px (adjust as needed) */
