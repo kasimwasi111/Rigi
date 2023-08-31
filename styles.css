@@ -24,6 +24,10 @@ header {
   justify-content: space-between;
   gap: 1rem;
   background-color: var(--second-bg);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .header_logo {
@@ -203,17 +207,24 @@ a {
   text-align: center;
 }
 
+/* Keep the existing .btn_tab styles */
 .btn_tab {
   padding: 1rem 6rem;
   outline: none;
   border: none;
   font-size: 1rem;
   font-weight: 500;
-  color: var(--white);
-  background-color: var(--primary-color);
+  color: var(--text-dark);
+  background-color: var(--white);
   border-radius: 3rem;
   cursor: pointer;
   margin-top: 2rem;
+}
+
+/* Add styles for the active tab button */
+.btn_tab.active {
+  background-color: var(--primary-color);
+  color: var(--white); /* Change to your desired active color */
 }
 
 .community {

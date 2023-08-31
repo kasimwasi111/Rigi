@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/8093241b59.js"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </head>
   <body>
     <header>
@@ -79,11 +79,15 @@
       <h1 class="about_heading">Services</h1>
       <p class="about_skills">Start your journey towards financial freedom</p>
       <div class="tabs">
-        <button class="btn_tab active" onclick="displayTab(1)">
+        <button class="btn_tab active" onclick="displayTab(1)" data-tab="1">
           Community
         </button>
-        <button class="btn_tab" onclick="displayTab(2)">Courses</button>
-        <button class="btn_tab" onclick="displayTab(3)">Consultation</button>
+        <button class="btn_tab" onclick="displayTab(2)" data-tab="2">
+          Courses
+        </button>
+        <button class="btn_tab" onclick="displayTab(3)" data-tab="3">
+          Consultation
+        </button>
       </div>
 
       <div class="community active" id="tab1">
@@ -230,7 +234,7 @@
     <div class="app">
       <div class="app_link">
         <p>Get the app in one click</p>
-        <h1>Hach your wealth journey inside the 1% club</h1>
+        <h1>Hack your wealth journey inside the 1% club</h1>
         <button class="hero_btn">Join the community</button>
         <img src="assets/app.png" alt="app" />
       </div>
@@ -296,5 +300,36 @@
         <p>Terms of services</p>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabButtons = document.querySelectorAll(".btn_tab");
+        const tabContents = document.querySelectorAll(
+          ".community, .courses, .consultation"
+        );
+
+        // Display default tab
+        tabContents[0].style.display = "block";
+        tabButtons[0].classList.add("active");
+
+        // Add click event listeners to tab buttons
+        tabButtons.forEach((button, index) => {
+          button.addEventListener("click", () => {
+            // Hide all tab contents
+            tabContents.forEach((content) => {
+              content.style.display = "none";
+            });
+
+            // Display the selected tab content
+            tabContents[index].style.display = "block";
+
+            // Activate the clicked tab button and deactivate others
+            tabButtons.forEach((btn) => {
+              btn.classList.remove("active");
+            });
+            button.classList.add("active");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
