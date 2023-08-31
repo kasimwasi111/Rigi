@@ -79,6 +79,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 100vh;
 }
 
 .hero_description {
@@ -113,7 +114,7 @@ a {
 }
 
 .hero_img {
-  width: 60rem;
+  width: 40rem;
   margin-right: 5rem;
   margin-top: 1rem;
 }
@@ -128,12 +129,13 @@ a {
 }
 
 .featured_heading {
-  margin: 2rem;
+  font-size: 1.25rem;
+  margin-top: 2rem;
 }
 
 .img_container img {
   display: block;
-  margin: 0 auto;
+  margin-top: 2rem;
   max-width: 100%;
   height: auto;
   width: 40rem;
@@ -149,7 +151,8 @@ a {
 }
 
 .about_heading {
-  margin-top: 4rem;
+  font-size: 1.25rem;
+  margin-top: 2rem;
 }
 
 .about_skills {

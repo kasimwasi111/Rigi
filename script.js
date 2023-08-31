@@ -5,27 +5,46 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   // Display default tab
-  tabContents[0].style.display = "block";
+  tabContents[0].style.display = "flex"; // For desktop view
   tabButtons[0].classList.add("active");
+
+  // Function to adjust display property based on media query
+  function adjustDisplayProperty() {
+    const displayProperty = window.matchMedia("(max-width: 768px)").matches
+      ? "block" // For mobile view
+      : "flex"; // For desktop view
+
+    tabContents.forEach((content) => {
+      content.style.display = "none"; // Hide all tab contents
+    });
+
+    // Display the selected tab content
+    tabContents[
+      Array.from(tabButtons).indexOf(document.querySelector(".active"))
+    ].style.display = displayProperty;
+  }
+
+  // Initial call to set the display property
+  adjustDisplayProperty();
 
   // Add click event listeners to tab buttons
   tabButtons.forEach((button, index) => {
     button.addEventListener("click", () => {
-      // Hide all tab contents
-      tabContents.forEach((content) => {
-        content.style.display = "none";
-      });
-
-      // Display the selected tab content
-      tabContents[index].style.display = "block";
-
-      // Activate the clicked tab button and deactivate others
+      // Deactivate all tab buttons
       tabButtons.forEach((btn) => {
         btn.classList.remove("active");
       });
+
+      // Activate the clicked tab button
       button.classList.add("active");
+
+      // Adjust the display property of tab contents
+      adjustDisplayProperty();
     });
   });
+
+  // Adjust display property on window resize
+  window.addEventListener("resize", adjustDisplayProperty);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
