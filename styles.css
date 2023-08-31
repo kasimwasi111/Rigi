@@ -346,6 +346,7 @@ a {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
+  text-align: left;
 }
 
 .card_btn {
@@ -379,6 +380,7 @@ a {
   border-radius: 0.65rem;
   box-shadow: 0 0 0.65rem rgba(0, 0, 0, 0.2);
   padding: 1.25rem;
+  text-align: left;
 }
 
 .consultation_card img {
@@ -395,7 +397,7 @@ a {
 
 .meet_details {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .meet_details i,
