@@ -281,13 +281,13 @@ a {
 
 .check_icon i {
   font-size: 1.5rem;
-  color: var(--text-dark); /* Change icon color as needed */
+  color: var(--text-dark);
   font-weight: bold;
 }
 
 .feature_text {
-  font-size: 1rem; /* Adjust text size as needed */
-  color: var(--text-dark); /* Adjust text color as needed */
+  font-size: 1rem;
+  color: var(--text-dark);
   font-weight: bold;
 }
 
