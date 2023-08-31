@@ -264,29 +264,31 @@ a {
 }
 
 .features {
-  margin-top: 2rem;
-  font-size: 1rem;
-  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
 }
 
-.features i {
-  color: var(--text-dark);
+.feature {
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
-.features i:before {
-  margin-right: 0.65rem;
+.check_icon {
+  margin-right: 1rem;
 }
 
-.features span {
-  display: inline-block;
-  text-transform: lowercase;
-  text-align: left;
+.check_icon i {
+  font-size: 1.5rem;
+  color: var(--text-dark); /* Change icon color as needed */
+  font-weight: bold;
 }
 
-.features br {
-  margin-bottom: 1.25rem;
+.feature_text {
+  font-size: 1rem; /* Adjust text size as needed */
+  color: var(--text-dark); /* Adjust text color as needed */
+  font-weight: bold;
 }
 
 .community_btn {
