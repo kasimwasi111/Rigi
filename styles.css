@@ -67,7 +67,7 @@ a {
 }
 
 .link a:hover {
-  color: var(--text-dark);
+  color: var(--primary-color);
 }
 
 .hero_container {
@@ -111,6 +111,11 @@ a {
   border-radius: 3rem;
   cursor: pointer;
   margin-top: 2rem;
+}
+
+.hero_btn:hover {
+  color: var(--text-dark);
+  background-color: #c1dde5;
 }
 
 .hero_img {
@@ -194,11 +199,15 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .social_icons i {
   color: white;
   font-size: 20px;
+}
+.social_icons li:hover {
+  background-color: #c1dde5;
 }
 
 .services {
@@ -305,6 +314,11 @@ a {
   align-self: flex-start;
 }
 
+.community_btn:hover {
+  color: var(--text-dark);
+  background-color: #c1dde5;
+}
+
 .community_img {
   width: 20rem;
   margin: 1rem;
@@ -362,6 +376,11 @@ a {
   margin-top: 2rem;
   cursor: pointer;
   text-align: center;
+}
+
+.card_btn:hover {
+  color: var(--text-dark);
+  background-color: #c1dde5;
 }
 
 .consultation {
@@ -607,6 +626,11 @@ a {
   align-items: center;
 }
 
+.icon:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
 .icon i {
   font-size: 2rem;
   justify-content: center;
@@ -669,6 +693,10 @@ footer {
 .footer_icons i {
   color: var(--primary-color);
   font-size: 20px;
+}
+
+.footer_icons li:hover {
+  background-color: var(--text-dark);
 }
 
 .terms {
